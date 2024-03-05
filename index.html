@@ -6,6 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    안녕~
+    <h1>사용자 목록</h1>
+    <div id="users"></div>
+
+    <script>
+      // data.json 파일에서 데이터를 비동기적으로 불러오는 함수
+      fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+          const usersContainer = document.getElementById('users');
+          data.users.forEach(user => {
+            const userElement = document.createElement('div');
+            userElement.innerText = `ID: ${user.id}, 이름: ${user.name}, 이메일: ${user.email}`;
+            usersContainer.appendChild(userElement);
+          });
+        })
+        .catch(error => console.error('데이터를 불러오는 데 실패했습니다.', error));
+    </script>
 </body>
 </html>
