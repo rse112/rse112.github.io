@@ -1,16 +1,20 @@
-name: CI
+# name: CI
 
-on: [push]
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
-      run: |
-        echo Add other commands you want to run here
-        echo This is a multi-line script
+# on: 
+#   schedule:
+#       - cron: '0 0 * * *'
+      
+# jobs:
+#   crawl:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v2
+#     - name: Set up Python
+#       uses: actions/setup-python@v2
+#       with:
+#         python-version: '3.9.1' # 또는 프로젝트에 맞는 구체적인 Python 버전 지정
+#     - name: Install dependencies
+#       run: pip install -r requirements.txt  # 필요한 경우
+#     - name: Run the crawling script
+#       run: python your_crawling_script.py
