@@ -26,6 +26,10 @@ MONGO_DB_URL = get_secret("MONGO_DB_URL")
 NAVER_API_ID = get_secret("NAVER_API_ID")
 NAVER_API_SECRET = get_secret("NAVER_API_SECRET")
 
+
+
+
+
 if __name__ == "__main__":
     print(MONGO_DB_NAME)
     print(MONGO_DB_URL)
