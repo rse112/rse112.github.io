@@ -5,6 +5,9 @@ import pandas as pd
 from datetime import datetime
 import asyncio
 import sys
+import time
+import os
+
 
 if sys.platform == "win32":
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
@@ -93,33 +96,61 @@ async def trend_maincode(params, api_url):
     return results
 
 
-if __name__ == "__main__":
-    # 결과 출력
+async def main():
+    # 메인 코드 블록
+    api_url = "https://openapi.naver.com/v1/datalab/search"
+    # 이벤트 루프 실행 대신 await 사용
+    results = await trend_maincode(params, api_url)
+    # 상위 디렉토리 (rse112.github.io/) 에 data.json 파일의 경로를 구성
+    return results
 
     # 파라미터
-    params = {
-        "search_keywords": [
-            "디도스",
-            "클라우드 보안",
-            "사이버 공격",
-            "주식",
-            "비트코인",
-            "테슬라",
-            "삼성전자",
-            "네이버",
-            "퇴직연금",
-        ],
-        "id": "6EnPxrgdgIfVJ_PSLvlN",
-        "pw": "cS07IhlKx6",
-        "api_url": "https://openapi.naver.com/v1/datalab/search",
-        "name": "name",
-    }
 
-    import time
 
-    start = time.time()
-    api_url = "https://openapi.naver.com/v1/datalab/search"
-    # 이벤트 루프 실행
-    results = asyncio.run(trend_maincode(params, api_url))
-    for df in results:
-        print(df)
+params = {
+    "search_keywords": [
+        "디도스",
+        "클라우드 보안",
+        "사이버 공격",
+        "주식",
+        "비트코인",
+        "테슬라",
+        "삼성전자",
+        "네이버",
+        "퇴직연금",
+    ],
+    "id": "6EnPxrgdgIfVJ_PSLvlN",
+    "pw": "cS07IhlKx6",
+    "api_url": "https://openapi.naver.com/v1/datalab/search",
+    "name": "name",
+}
+
+# 데이터 처리 및 파일 저장 로직...
+
+import asyncio
+import json
+import os
+
+# 기존의 비동기 함수 및 main 함수 정의...
+
+if __name__ == "__main__":
+    results = asyncio.run(main())
+
+    if results:  # results 리스트가 비어있지 않은지 확인
+        reset_a = results[0].reset_index()  # 첫 번째 결과 사용
+        # 데이터를 리스트와 딕셔너리 형태로 변환
+        b = {
+            "date": reset_a["date"].tolist(),
+            "value": reset_a[reset_a.columns[1]].tolist(),
+        }
+
+        current_dir = os.getcwd()
+        parent_dir = os.path.dirname(current_dir)
+        data_file_path = os.path.join(parent_dir, "data.json")
+
+        # 데이터를 JSON 파일에 저장
+        with open(data_file_path, "w") as json_file:
+            json.dump(b, json_file)
+        print(f"Data saved to {data_file_path}")
+    else:
+        print("No data to save.")
