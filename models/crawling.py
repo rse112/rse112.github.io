@@ -155,11 +155,10 @@ if results:  # results 리스트가 비어있지 않은지 확인
             "date": reset_a["date"].tolist(),
             "value": reset_a[keyword].tolist(),
         }
-    print(b)
+
     script_dir = os.path.dirname(os.path.abspath(__file__))
     parent_dir = os.path.dirname(script_dir)
     data_file_path = os.path.join(parent_dir, "data.json")
-    print(data_file_path)
     # 데이터를 JSON 파일에 저장
     try:
         with open(data_file_path, "w") as json_file:
