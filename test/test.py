@@ -143,14 +143,21 @@ if __name__ == "__main__":
             "date": reset_a["date"].tolist(),
             "value": reset_a[reset_a.columns[1]].tolist(),
         }
-
+        print(b["date"][:5], b["value"][:5])
+        c = {
+            "dkssud": [1, 2, 3, 4, 5],
+        }
         current_dir = os.getcwd()
         parent_dir = os.path.dirname(current_dir)
         data_file_path = os.path.join(parent_dir, "data.json")
-
+        print(data_file_path)
         # 데이터를 JSON 파일에 저장
-        with open(data_file_path, "w") as json_file:
-            json.dump(b, json_file)
-        print(f"Data saved to {data_file_path}")
+        try:
+            with open(data_file_path, "w") as json_file:
+                json.dump(c, json_file)
+            print(f"Data saved to {data_file_path}")
+        except Exception as e:
+            print(f"Error saving data: {e}")
+
     else:
         print("No data to save.")
