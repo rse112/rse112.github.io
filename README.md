@@ -1,5 +1,8 @@
 # rse112.github.io
 
+# 템플릿 후보
+# https://github.com/thiagorossener/jekflix-template?tab=readme-ov-file
+
 
 # 프로젝트명
 
@@ -8,6 +11,21 @@
 매일 00시 00분에 데이터 크롤링과 데이터분석 / 시각화를 파이썬파일을 구분한 이후 index.html으로 출력할꺼임(이후엔 다른 홈피로 출력할꺼임)
 
 ## 구성 요소
+### 주의!!
+
+keyword = [
+    "주식",
+    "비트코인",
+    "금값",
+    "주식",
+    "알트코인",
+    "테슬라",
+    "삼성전자",
+    "네이버",
+    "퇴직연금",
+]
+
+으로만 키워드 사용 할 것.
 
 ### models/crawling.py
 

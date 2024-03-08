@@ -124,47 +124,48 @@ sys.path.append(parent_dir)
 from utils.config import NAVER_API_ID, NAVER_API_SECRET
 
 # 기존의 비동기 함수 및 main 함수 정의...
-
-if __name__ == "__main__":
-    params = {
-        "search_keywords": [
-            "디도스",
-            "클라우드 보안",
-            "사이버 공격",
-            "주식",
-            "비트코인",
-            "테슬라",
-            "삼성전자",
-            "네이버",
-            "퇴직연금",
-        ],
-        "id": NAVER_API_ID,
-        "pw": NAVER_API_SECRET,
-        "api_url": "https://openapi.naver.com/v1/datalab/search",
-        "name": "name",
-    }
-    results = asyncio.run(main(params))
-
-    if results:  # results 리스트가 비어있지 않은지 확인
-        reset_a = results[0].reset_index()  # 첫 번째 결과 사용
-        # 데이터를 리스트와 딕셔너리 형태로 변환
-        b = {
+params = {
+    "search_keywords": [
+        "주식",
+        "비트코인",
+        "금값",
+        "주식",
+        "알트코인",
+        "테슬라",
+        "삼성전자",
+        "네이버",
+        "퇴직연금",
+    ],
+    "id": NAVER_API_ID,
+    "pw": NAVER_API_SECRET,
+    "api_url": "https://openapi.naver.com/v1/datalab/search",
+    "name": "name",
+}
+results = asyncio.run(main(params))
+if results:  # results 리스트가 비어있지 않은지 확인
+    reset_a = results[0].reset_index()  # 첫 번째 결과 사용
+    reset_b = results[1].reset_index()  # 첫 번째 결과 사용
+    column_list = []
+    for i in range(len(results)):
+        column_list.append(results[i].reset_index().columns[1])
+    b = {}
+    for keyword in column_list:
+        reset_a = results[column_list.index(keyword)].reset_index()
+        b[keyword] = {
             "date": reset_a["date"].tolist(),
-            "value": reset_a[reset_a.columns[1]].tolist(),
+            "value": reset_a[keyword].tolist(),
         }
-
-        script_dir = os.path.dirname(os.path.abspath(__file__))
-        parent_dir = os.path.dirname(script_dir)
-        data_file_path = os.path.join(parent_dir, "data.json")
-
-        print(data_file_path)
-        # 데이터를 JSON 파일에 저장
-        try:
-            with open(data_file_path, "w") as json_file:
-                json.dump(b, json_file)
-            print(f"Data saved to {data_file_path}")
-        except Exception as e:
-            print(f"Error saving data: {e}")
-
-    else:
-        print("No data to save.")
+    print(b)
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    parent_dir = os.path.dirname(script_dir)
+    data_file_path = os.path.join(parent_dir, "data.json")
+    print(data_file_path)
+    # 데이터를 JSON 파일에 저장
+    try:
+        with open(data_file_path, "w") as json_file:
+            json.dump(b, json_file)
+        print(f"Data saved to {data_file_path}")
+    except Exception as e:
+        print(f"Error saving data: {e}")
+else:
+    print("No data to save.")
