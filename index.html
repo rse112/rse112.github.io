@@ -6,22 +6,51 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>사용자 목록</h1>
-    <div id="users"></div>
-
+    <div id="tableContainer"></div>
     <script>
-      // data.json 파일에서 데이터를 비동기적으로 불러오는 함수
-      fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-          const usersContainer = document.getElementById('users');
-          data.users.forEach(user => {
-            const userElement = document.createElement('div');
-            userElement.innerText = `ID: ${user.id}, 이름: ${user.name}, 이메일: ${user.email}`;
-            usersContainer.appendChild(userElement);
-          });
-        })
-        .catch(error => console.error('데이터를 불러오는 데 실패했습니다.', error));
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                // 테이블 요소 생성
+                const table = document.createElement('table');
+                table.setAttribute('border', '1');
+                
+                // 테이블 헤더 생성
+                const thead = document.createElement('thead');
+                const headerRow = document.createElement('tr');
+                const headers = ['검색 키워드', '시간', '검색량'];
+                headers.forEach(headerText => {
+                    const header = document.createElement('th');
+                    header.textContent = headerText;
+                    headerRow.appendChild(header);
+                });
+                thead.appendChild(headerRow);
+                table.appendChild(thead);
+
+                // 테이블 바디 생성
+                const tbody = document.createElement('tbody');
+                Object.entries(data).forEach(([key, value]) => {
+                    const row = document.createElement('tr');
+                    const cellKeyword = document.createElement('td');
+                    cellKeyword.textContent = key;
+                    row.appendChild(cellKeyword);
+
+                    const cellTime = document.createElement('td');
+                    cellTime.textContent = value.time; // 가정: value 객체 내에 'time' 키 존재
+                    row.appendChild(cellTime);
+
+                    const cellVolume = document.createElement('td');
+                    cellVolume.textContent = value.volume; // 가정: value 객체 내에 'volume' 키 존재
+                    row.appendChild(cellVolume);
+
+                    tbody.appendChild(row);
+                });
+                table.appendChild(tbody);
+
+                // 생성된 테이블을 div#tableContainer에 추가
+                document.getElementById('tableContainer').appendChild(table);
+            })
+            .catch(error => console.error('Error loading the JSON data:', error));
     </script>
 </body>
 </html>
