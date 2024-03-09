@@ -1,25 +1,16 @@
-# First, import the elements you need
+# my_app.py
+import streamlit as st
+from streamlit_elements import elements, mui
 
-from streamlit_elements import elements, mui, html
 
-# Create a frame where Elements widgets will be displayed.
-#
-# Elements widgets will not render outside of this frame.
-# Native Streamlit widgets will not render inside this frame.
-#
-# elements() takes a key as parameter.
-# This key can't be reused by another frame or Streamlit widget.
+# Streamlit 애플리케이션의 메인 페이지를 정의합니다.
+def main():
+    with elements("new_element"):  # elements 프레임 생성
+        mui.Typography(
+            "Hello world"
+        )  # "Hello world" 텍스트를 표시하는 Typography 컴포넌트
 
-with elements("new_element"):
 
-    # Let's create a Typography element with "Hello world" as children.
-    # The first step is to check Typography's documentation on MUI:
-    # https://mui.com/components/typography/
-    #
-    # Here is how you would write it in React JSX:
-    #
-    # <Typography>
-    #   Hello world
-    # </Typography>
-
-    mui.Typography("Hello world")
+# 스크립트가 직접 실행될 때만 main 함수를 호출합니다.
+if __name__ == "__main__":
+    main()
