@@ -7,10 +7,7 @@ st.set_page_config(layout="wide")
 
 with elements("multiple_children"):
 
-    # You have access to Material UI icons using: mui.icon.IconNameHere
-    #
-    # Multiple children can be added in a single element.
-    #
+    # <Button> 요소 안에 여러 자식 요소를 추가하는 예시
     # <Button>
     #   <EmojiPeople />
     #   <DoubleArrow />
@@ -21,8 +18,8 @@ with elements("multiple_children"):
         mui.icon.EmojiPeople, mui.icon.DoubleArrow, "Button with multiple children"
     )
 
-    # You can also add children to an element using a 'with' statement.
-    #
+    # <Button> 요소 안에 <EmojiPeople />, <DoubleArrow />, <Typography>를
+    # 자식으로 추가하는 예시
     # <Button>
     #   <EmojiPeople />
     #   <DoubleArrow />
@@ -40,7 +37,7 @@ with elements("multiple_children"):
 ########
 with elements("nested_children"):
 
-    # You can nest children using multiple 'with' statements.
+    # <Paper> 요소 안에 중첩된 자식 요소를 추가하는 예시
     #
     # <Paper>
     #   <Typography>
@@ -55,13 +52,13 @@ with elements("nested_children"):
             html.p("Goodbye world")
 with elements("properties"):
 
-    # You can add properties to elements with named parameters.
+    # <Paper> 요소에 속성을 추가하는 예시
     #
-    # To find all available parameters for a given element, you can
-    # refer to its related documentation on mui.com for MUI widgets,
-    # on https://microsoft.github.io/monaco-editor/ for Monaco editor,
-    # and so on.
-    #
+    # "주어진 요소에 대한 모든 가능한 매개변수를 찾으려면,
+    # MUI 위젯의 경우 mui.com에서, Monaco 편집기의 경우
+    # https://microsoft.github.io/monaco-editor/에서 등
+    # 관련 문서를 참조할 수 있습니다."
+
     # <Paper elevation={3} variant="outlined" square>
     #   <TextField label="My text input" defaultValue="Type here" variant="outlined" />
     # </Paper>
@@ -73,8 +70,9 @@ with elements("properties"):
             variant="outlined",
         )
 
-    # If you must pass a parameter which is also a Python keyword, you can append an
-    # underscore to avoid a syntax error.
+    # "파이썬 키워드와 동일한 매개변수를 전달해야 하는 경우,
+    # 문법 오류를 피하기 위해
+    # 밑줄(_)을 추가할 수 있습니다."
     #
     # <Collapse in />
 
@@ -86,7 +84,7 @@ with elements("properties"):
 
 with elements("style_mui_sx"):
 
-    # For Material UI elements, use the 'sx' property.
+    # "Material UI 요소에는 'sx' 속성을 사용하세요."
     #
     # <Box
     #   sx={{
@@ -114,7 +112,7 @@ with elements("style_mui_sx"):
 
 with elements("style_elements_css"):
 
-    # For any other element, use the 'css' property.
+    # "다른 모든 요소에는 'css' 속성을 사용하세요."
     #
     # <div
     #   css={{
@@ -136,45 +134,50 @@ with elements("style_elements_css"):
 import streamlit as st
 
 
-# 필요한 초기화
-if "my_text" not in st.session_state:
-    st.session_state.my_text = ""
-
-
-# 입력 처리 콜백 함수
-def handle_change(event):
-    st.session_state.my_text = event.target.value
-    # 여기서 "a" 변수에 할당
-    st.session_state.a = st.session_state.my_text
-
-
 with elements("callbacks_retrieve_data"):
-    # 사용자 입력을 표시
+
+    # 특정 이벤트에서 콜백을 실행할 수 있는 요소가 있습니다.
+    #
+    # const [name, setName] = React.useState("")
+    # const handleChange = (event) => {
+    #   // 여기에서 볼 수 있듯이 텍스트 필드 값은
+    #   // event.target.value에 저장됩니다
+    #   setName(event.target.value)
+    # }
+    #
+    # <TextField
+    #   label="여기에 텍스트를 입력하세요"
+    #   onChange={handleChange}
+    # />
+    # 'my_text'라는 이름의 새 항목을 세션 상태에 초기화합니다.
+    if "my_text" not in st.session_state:
+        st.session_state.my_text = ""
+
+    # 텍스트 필드가 변경될 때 이 함수가 호출됩니다.
+    # 콜백에 전달되는 매개변수를 알기 위해서는,
+    # 요소의 문서를 참조할 수 있습니다.
+    def handle_change(event):
+        st.session_state.my_text = event.target.value
+
+    # 여기서 우리가 텍스트 필드에 입력한 것을 표시합니다.
     mui.Typography(st.session_state.my_text)
 
-    # TextField 구성과 이벤트 핸들러 연결
-    mui.TextField(label="Input some text here", onChange=handle_change)
-
-# "a" 변수를 사용해 무언가를 하고 싶을 때, 그리고 "a" 변수에 값이 있을 때만 실행:
-if "a" in st.session_state and st.session_state.a:
-    st.write(f"The text in variable 'a' is: {st.session_state.a}")
-
+    # 그리고 여기서 'onChange' 속성에 우리의 'handle_change' 콜백을 제공합니다.
+    mui.TextField(label="텍스트를 입력하세요", onChange=handle_change)
 
 with elements("callbacks_sync"):
 
-    # If you just want to store callback parameters into Streamlit's session state
-    # like above, you can also use the special function sync().
+    # 위와 같이 콜백 매개변수를 Streamlit의 세션 상태에 저장하고 싶다면,
+    # 특별한 함수인 sync()를 사용할 수도 있습니다.
     #
-    # When an onChange event occurs, the callback is called with an event data object
-    # as argument. In the example below, we are synchronizing that event data object with
-    # the session state item 'my_event'.
+    # onChange 이벤트가 발생하면, 콜백은 이벤트 데이터 객체를 인수로 호출됩니다.
+    # 아래 예시에서, 우리는 그 이벤트 데이터 객체를 세션 상태 항목 'my_event'와 동기화하고 있습니다.
     #
-    # If an event passes more than one parameter, you can synchronize as many session state item
-    # as needed like so:
+    # 이벤트가 여러 매개변수를 전달하는 경우, 필요한 만큼 많은 세션 상태 항목을 동기화할 수 있습니다:
     # >>> sync("my_first_param", "my_second_param")
     #
-    # If you want to ignore the first parameter of an event but keep synchronizing the second,
-    # pass None to sync:
+    # 이벤트의 첫 번째 매개변수를 무시하고 두 번째를 동기화하고 싶다면,
+    # sync에 None을 전달하세요:
     # >>> sync(None, "second_parameter_to_keep")
 
     from streamlit_elements import sync
@@ -193,13 +196,12 @@ with elements("callbacks_sync"):
 
 with elements("callbacks_lazy"):
 
-    # With the two first examples, each time you input a letter into the text field,
-    # the callback is invoked but the whole app is reloaded as well.
+    # 첫 두 예제와 같이, 텍스트 필드에 글자를 입력할 때마다 콜백이 호출되지만
+    # 전체 앱도 함께 다시 로드됩니다.
     #
-    # To avoid reloading the whole app on every input, you can wrap your callback with
-    # lazy(). This will defer the callback invocation until another non-lazy callback
-    # is invoked. This can be useful to implement forms.
-
+    # 모든 입력마다 전체 앱을 다시 로드하는 것을 피하기 위해서, 콜백을
+    # lazy()로 감쌀 수 있습니다. 이것은 다른 비지연 콜백이 호출될 때까지
+    # 콜백 호출을 지연시킵니다. 이 방법은 폼을 구현할 때 유용할 수 있습니다.
     from streamlit_elements import lazy
 
     if "first_name" not in st.session_state:
@@ -219,24 +221,24 @@ with elements("callbacks_lazy"):
     def set_last_name(event):
         st.session_state.last_name = event
 
-    # Display first name and last name
-    mui.Typography("Your first name: ", first_name)
-    mui.Typography("Your last name: ", last_name)
+    # 이름과 성을 표시합니다
+    mui.Typography("당신의 이름: ", first_name)
+    mui.Typography("당신의 성: ", last_name)
+    # first_name과 last_name 상태와 onChange를 지연시켜 동기화합니다.
+    # 텍스트를 입력해도 값이 바로 동기화되지 않습니다.
 
-    # Lazily synchronize onChange with first_name and last_name state.
-    # Inputting some text won't synchronize the value yet.
-    mui.TextField(label="First name", onChange=lazy(sync("first_name")))
-
-    # You can also pass regular python functions to lazy().
-    mui.TextField(label="Last name", onChange=lazy(set_last_name))
-
-    # Here we give a non-lazy callback to onClick using sync().
-    # We are not interested in getting onClick event data object,
-    # so we call sync() with no argument.
+    mui.TextField(label="당신의 이름", onChange=lazy(sync("first_name")))
+    mui.TextField(label="성", onChange=lazy(sync("last_name")))
+    # lazy()에 일반 파이썬 함수도 전달할 수 있습니다.
+    name = st.session_state.first_name
+    print(name)
+    # 여기서 우리는 onClick에 비지연 콜백을 sync()를 사용해 제공합니다.
+    # onClick 이벤트 데이터 객체를 가져오는 데 관심이 없으므로,
+    # 아무 인자도 없이 sync()를 호출합니다.
     #
-    # You can use either sync() or a regular python function.
-    # As long as the callback is not wrapped with lazy(), its invocation will
-    # also trigger every other defered callbacks.
+    # sync()나 일반 파이썬 함수를 사용할 수 있습니다.
+    # 콜백이 lazy()로 감싸지 않는 한, 그 호출은
+    # 모든 다른 지연된 콜백들의 트리거도 발동시킬 것입니다.
     mui.Button("Update first namd and last name", onClick=sync())
 
 
@@ -275,63 +277,60 @@ with elements("callbacks_hotkey"):
     #         print("Hello world")
 
     # event.Interval(1, call_every_second)
-with elements("dashboard"):
 
-    # You can create a draggable and resizable dashboard using
-    # any element available in Streamlit Elements.
+
+with elements("dashboard"):
+    # Streamlit Elements에서 제공하는 모든 요소를 사용하여 드래그하고 크기를 조정할 수 있는 대시보드를 만들 수 있습니다.
 
     from streamlit_elements import dashboard
 
-    # First, build a default layout for every element you want to include in your dashboard
+    # 먼저, 대시보드에 포함시키고 싶은 모든 요소에 대해 기본 레이아웃을 구성하세요.
 
     layout = [
-        # Parameters: element_identifier, x_pos, y_pos, width, height, [item properties...]
+        # 매개변수: element_identifier, x_pos, y_pos, width, height, [항목 속성...]
         dashboard.Item("first_item", 0, 0, 2, 2),
         dashboard.Item("second_item", 2, 0, 2, 2, isDraggable=False, moved=False),
         dashboard.Item("third_item", 0, 2, 1, 1, isResizable=False),
     ]
 
-    # Next, create a dashboard layout using the 'with' syntax. It takes the layout
-    # as first parameter, plus additional properties you can find in the GitHub links below.
+    # 다음으로, 'with' 문법을 사용하여 레이아웃을 가진 대시보드를 생성합니다. 첫 번째 매개변수로 레이아웃을 취하고, GitHub 링크에서 찾을 수 있는 추가 속성들을 사용할 수 있습니다.
 
     with dashboard.Grid(layout):
-        mui.Paper("First item", key="first_item")
-        mui.Paper("Second item (cannot drag)", key="second_item")
-        mui.Paper("Third item (cannot resize)", key="third_item")
+        mui.Paper("첫 번째 항목", key="first_item")
+        mui.Paper("두 번째 항목 (드래그할 수 없음)", key="second_item")
+        mui.Paper("세 번째 항목 (크기 조정할 수 없음)", key="third_item")
 
-    # If you want to retrieve updated layout values as the user move or resize dashboard items,
-    # you can pass a callback to the onLayoutChange event parameter.
+    # 사용자가 대시보드 항목을 이동하거나 크기를 조정할 때 업데이트된 레이아웃 값을 검색하려면, onLayoutChange 이벤트 매개변수에 콜백을 전달할 수 있습니다.
 
     def handle_layout_change(updated_layout):
-        # You can save the layout in a file, or do anything you want with it.
-        # You can pass it back to dashboard.Grid() if you want to restore a saved layout.
+        # 레이아웃을 파일에 저장하거나, 원하는 대로 처리할 수 있습니다.
+        # 저장된 레이아웃을 복원하고 싶다면 dashboard.Grid()에 다시 전달할 수 있습니다.
         print(updated_layout)
 
     with dashboard.Grid(layout, onLayoutChange=handle_layout_change):
-        mui.Paper("First item", key="first_item")
-        mui.Paper("Second item (cannot drag)", key="second_item")
-        mui.Paper("Third item (cannot resize)", key="third_item")
+        mui.Paper("첫 번째 항목", key="first_item")
+        mui.Paper("두 번째 항목 (드래그할 수 없음)", key="second_item")
+        mui.Paper("세 번째 항목 (크기 조정할 수 없음)", key="third_item")
 
 
 with elements("nivo_charts"):
-
-    # Streamlit Elements includes 45 dataviz components powered by Nivo.
+    # Streamlit Elements는 Nivo에 의해 구동되는 45개의 데이터 시각화 컴포넌트를 포함하고 있습니다.
 
     from streamlit_elements import nivo
 
     DATA = [
-        {"taste": "fruity", "chardonay": 93, "carmenere": 61, "syrah": 114},
-        {"taste": "bitter", "chardonay": 91, "carmenere": 37, "syrah": 72},
-        {"taste": "heavy", "chardonay": 56, "carmenere": 95, "syrah": 99},
-        {"taste": "strong", "chardonay": 64, "carmenere": 90, "syrah": 30},
-        {"taste": "sunny", "chardonay": 119, "carmenere": 94, "syrah": 103},
+        {"맛": "과일같은", "샤르도네": 93, "카르메네르": 61, "시라": 114},
+        {"맛": "쓴", "샤르도네": 91, "카르메네르": 37, "시라": 72},
+        {"맛": "무거운", "샤르도네": 56, "카르메네르": 95, "시라": 99},
+        {"맛": "강한", "샤르도네": 64, "카르메네르": 90, "시라": 30},
+        {"맛": "햇볕이 잘 드는", "샤르도네": 119, "카르메네르": 94, "시라": 103},
     ]
 
     with mui.Box(sx={"height": 500}):
         nivo.Radar(
             data=DATA,
-            keys=["chardonay", "carmenere", "syrah"],
-            indexBy="taste",
+            keys=["샤르도네", "카르메네르", "시라"],
+            indexBy="맛",
             valueFormat=">-.2f",
             margin={"top": 70, "right": 80, "bottom": 40, "left": 80},
             borderColor={"from": "color"},

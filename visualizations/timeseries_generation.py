@@ -18,7 +18,7 @@ from utils.get_data import DataLoader
 
 # 데이터 로더 인스턴스 생성 및 데이터 로드
 data_loader = DataLoader.get_instance()
-keyword = "주식"
+keyword = "비트코인"
 stock_data = data_loader.get_data(keyword)
 
 # 데이터 프레임 변환 및 'date' 열 datetime 변환
@@ -33,9 +33,7 @@ graph_file_path = os.path.join(graph_dir, f"{keyword}_graph.png")
 
 # 시계열 그래프 그리기
 plt.figure(figsize=(10, 6))
-plt.plot(
-    df["date"], df["value"], marker="o", linestyle="-", markersize=1, color="black"
-)
+plt.plot(df["date"], df["value"], marker="o", linestyle="-", markersize=1)
 plt.title(f"{keyword} Graph")
 plt.xlabel("Date")
 plt.ylabel("Value")
