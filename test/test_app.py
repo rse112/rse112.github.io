@@ -279,6 +279,12 @@ with elements("callbacks_hotkey"):
     # event.Interval(1, call_every_second)
 
 
+keyword = "비트코인"
+from datetime import datetime
+
+now = datetime.now()
+formatteed_date = now.strftime("%y%m%d")
+
 with elements("dashboard"):
     # Streamlit Elements에서 제공하는 모든 요소를 사용하여 드래그하고 크기를 조정할 수 있는 대시보드를 만들 수 있습니다.
 
@@ -296,10 +302,11 @@ with elements("dashboard"):
     # 다음으로, 'with' 문법을 사용하여 레이아웃을 가진 대시보드를 생성합니다. 첫 번째 매개변수로 레이아웃을 취하고, GitHub 링크에서 찾을 수 있는 추가 속성들을 사용할 수 있습니다.
 
     with dashboard.Grid(layout):
-        mui.Paper("첫 번째 항목", key="first_item")
-        mui.Paper("두 번째 항목 (드래그할 수 없음)", key="second_item")
-        mui.Paper("세 번째 항목 (크기 조정할 수 없음)", key="third_item")
-
+        with mui.Paper(key="first_item"):
+            mui.CardMedia(
+                image=f"../graph/{formatteed_date}/{keyword}_graph.png",
+                style={"height": 0, "paddingTop": "56.25%"},
+            )
     # 사용자가 대시보드 항목을 이동하거나 크기를 조정할 때 업데이트된 레이아웃 값을 검색하려면, onLayoutChange 이벤트 매개변수에 콜백을 전달할 수 있습니다.
 
     def handle_layout_change(updated_layout):
@@ -309,6 +316,7 @@ with elements("dashboard"):
 
     with dashboard.Grid(layout, onLayoutChange=handle_layout_change):
         mui.Paper("첫 번째 항목", key="first_item")
+
         mui.Paper("두 번째 항목 (드래그할 수 없음)", key="second_item")
         mui.Paper("세 번째 항목 (크기 조정할 수 없음)", key="third_item")
 
