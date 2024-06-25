@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>금융 데이터 트렌드 분석</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <h1>금융 데이터 트렌드 분석</h1>
+
+    </header>
+
+    <main>
+        <section class="controls">
+            <label for="category">카테고리 선택:</label>
+            <select id="category">
+                <option value="graph">Graph Data</option>
+            </select>
+
+            <label for="subcategory" style="display: none;">서브카테고리 선택:</label>
+            <select id="subcategory" style="display: none;"></select>
+
+            <label for="keyword" style="display: none;">키워드 선택:</label>
+            <select id="keyword" style="display: none;"></select>
+        </section>
+
+        <section class="visualization">
+            <div id="chart-container">
+                <canvas id="chart"></canvas>
+            </div>
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>핵심키워드</th>
+                        <th>검색량</th>
+                        <th>지표</th>
+                        <th>뉴스제목</th>
+                        <th>뉴스링크</th>
+                        <th>활동성</th>
+                        <th>구글검색어</th>
+                        <th>검색키워드</th>
+                        <th>상승월</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 데이터 행이 여기에 삽입됩니다. -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 금융 데이터 분석 프로젝트</p>
+        <div class="social-media">
+        </div>
+        <p>연락처: chohy121212@naver.com | 010-9064-9234</p>
+    </footer>
+</body>
+</html>
