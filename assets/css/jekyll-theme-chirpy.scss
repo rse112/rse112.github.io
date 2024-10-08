@@ -1,5 +1,10 @@
+---
+---
+
+@import 'main
 {%- if jekyll.environment == 'production' -%}
-@import 'main.bundle';
-{%- else -%}
-@import 'main';
+  .bundle
 {%- endif -%}
+';
+
+/* append your custom style below */
