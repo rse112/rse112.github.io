@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/1_4_VectorMagnitude.gif
-title: "1.4 Magnitude and Unit Vectors"
+title: "Vector Magnitude and Unit Vector - How to Find Them"
 date: 2026-01-04 00:00:00 +0900
 categories: [Linear Algebra, Vectors]
 tags: [linear algebra, mathematics, vectors]

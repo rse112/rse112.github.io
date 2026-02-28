@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/7_1_OrthogonalVectors.gif
-title: "7.1 직교 벡터와 직교 행렬"
+title: "7.1 직교벡터와 직교행렬 - 직교성의 개념과 성질"
 date: 2026-01-23 00:00:00 +0900
 categories: [선형대수, 직교성]
 tags: [선형대수, 수학, 직교성]

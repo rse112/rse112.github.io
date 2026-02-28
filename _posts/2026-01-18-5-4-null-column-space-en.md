@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/5_4_ColumnSpaceViz.gif
-title: "5.4 Null Space and Column Space"
+title: "Null Space and Column Space - How to Find Them"
 date: 2026-01-18 00:00:00 +0900
 categories: [Linear Algebra, Vector Spaces]
 tags: [linear algebra, mathematics, vector spaces]

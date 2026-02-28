@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/1_1_ScalarVsVector.gif
-title: "1.1 벡터란 무엇인가"
+title: "1.1 벡터란 무엇인가 - 벡터 개념 쉽게 이해하기"
 date: 2026-01-01 00:00:00 +0900
 categories: [선형대수, 벡터]
 tags: [선형대수, 수학, 벡터]

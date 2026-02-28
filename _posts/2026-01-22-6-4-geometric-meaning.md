@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/6_4_EigendecompGeometric.gif
-title: "6.4 고유값의 기하학적 의미"
+title: "6.4 고유값과 고유벡터의 기하학적 의미"
 date: 2026-01-22 00:00:00 +0900
 categories: [선형대수, 고유값과 고유벡터]
 tags: [선형대수, 수학, 고유값과 고유벡터]

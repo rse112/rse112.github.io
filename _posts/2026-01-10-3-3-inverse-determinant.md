@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/3_3_Determinant2x2.gif
-title: "3.3 역행렬과 행렬식"
+title: "3.3 역행렬 구하기와 행렬식(Determinant) 계산법"
 date: 2026-01-10 00:00:00 +0900
 categories: [선형대수, 행렬]
 tags: [선형대수, 수학, 행렬]

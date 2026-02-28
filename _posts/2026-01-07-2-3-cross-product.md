@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/2_3_CrossProductArea.gif
-title: "2.3 외적 (Cross Product)"
+title: "2.3 외적(Cross Product) 공식과 기하학적 의미"
 date: 2026-01-07 00:00:00 +0900
 categories: [선형대수, 내적과 외적]
 tags: [선형대수, 수학, 내적과 외적]

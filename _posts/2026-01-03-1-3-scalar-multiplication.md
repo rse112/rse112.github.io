@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/1_3_ScalarMultiplication.gif
-title: "1.3 스칼라 곱 (Scalar Multiplication)"
+title: "1.3 스칼라곱이란? 벡터의 스칼라 곱셈 이해하기"
 date: 2026-01-03 00:00:00 +0900
 categories: [선형대수, 벡터]
 tags: [선형대수, 수학, 벡터]

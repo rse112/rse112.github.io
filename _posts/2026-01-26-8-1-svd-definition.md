@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/8_1_SVDFormula.gif
-title: "8.1 특이값 분해 (SVD) 정의"
+title: "8.1 특이값 분해(SVD)란? 정의와 계산 방법"
 date: 2026-01-26 00:00:00 +0900
 categories: [선형대수, 특이값 분해]
 tags: [선형대수, 수학, 특이값 분해]

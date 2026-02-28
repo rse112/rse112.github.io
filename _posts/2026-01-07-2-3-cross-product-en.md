@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/2_3_CrossProductArea.gif
-title: "2.3 The Cross Product"
+title: "Cross Product Formula and Geometric Interpretation"
 date: 2026-01-07 00:00:00 +0900
 categories: [Linear Algebra, Dot and Cross Product]
 tags: [linear algebra, mathematics, cross product]

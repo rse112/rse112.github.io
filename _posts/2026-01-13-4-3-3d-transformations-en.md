@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/4_3_RotationMatrices3D.gif
-title: "4.3 3D Linear Transformations"
+title: "3D Linear Transformations - Rotation Matrices and Scaling"
 date: 2026-01-13 00:00:00 +0900
 categories: [Linear Algebra, Linear Transformations]
 tags: [linear algebra, mathematics, linear transformations]

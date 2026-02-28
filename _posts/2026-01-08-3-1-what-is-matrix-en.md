@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/3_1_MatrixIntro.gif
-title: "3.1 What is a Matrix?"
+title: "What Is a Matrix? Introduction to Matrices in Linear Algebra"
 date: 2026-01-08 00:00:00 +0900
 categories: [Linear Algebra, Matrices]
 tags: [linear algebra, mathematics, matrices]

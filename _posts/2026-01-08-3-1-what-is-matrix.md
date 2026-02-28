@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/3_1_MatrixIntro.gif
-title: "3.1 행렬이란?"
+title: "3.1 행렬이란? 행렬의 개념과 종류"
 date: 2026-01-08 00:00:00 +0900
 categories: [선형대수, 행렬]
 tags: [선형대수, 수학, 행렬]

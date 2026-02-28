@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/3_2_MatrixMultiplication.gif
-title: "3.2 행렬 연산"
+title: "3.2 행렬 연산 - 행렬 덧셈과 곱셈 방법"
 date: 2026-01-09 00:00:00 +0900
 categories: [선형대수, 행렬]
 tags: [선형대수, 수학, 행렬]

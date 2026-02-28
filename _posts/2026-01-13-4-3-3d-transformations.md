@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/4_3_RotationMatrices3D.gif
-title: "4.3 3D 선형변환"
+title: "4.3 3D 선형변환 - 3차원 회전행렬과 스케일링"
 date: 2026-01-13 00:00:00 +0900
 categories: [선형대수, 선형변환]
 tags: [선형대수, 수학, 선형변환]

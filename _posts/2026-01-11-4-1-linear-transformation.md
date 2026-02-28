@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/4_1_LinearTransformGrid.gif
-title: "4.1 선형변환이란?"
+title: "4.1 선형변환이란? 정의와 예시로 이해하기"
 date: 2026-01-11 00:00:00 +0900
 categories: [선형대수, 선형변환]
 tags: [선형대수, 수학, 선형변환]

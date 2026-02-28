@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/7_1_OrthogonalVectors.gif
-title: "7.1 Orthogonal Vectors and Orthogonal Matrices"
+title: "Orthogonal Vectors and Orthogonal Matrices - Properties and Examples"
 date: 2026-01-23 00:00:00 +0900
 categories: [Linear Algebra, Orthogonality]
 tags: [linear algebra, mathematics, orthogonality]

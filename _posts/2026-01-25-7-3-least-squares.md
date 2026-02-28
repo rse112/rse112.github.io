@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/7_3_LeastSquaresViz.gif
-title: "7.3 최소제곱법 (Least Squares)"
+title: "7.3 최소제곱법(Least Squares) - 원리와 공식 유도"
 date: 2026-01-25 00:00:00 +0900
 categories: [선형대수, 직교성]
 tags: [선형대수, 수학, 직교성]

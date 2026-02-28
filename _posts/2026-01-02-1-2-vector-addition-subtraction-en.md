@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/1_2_VectorAddition.gif
-title: "1.2 Vector Addition and Subtraction"
+title: "Vector Addition and Subtraction - How to Add Vectors"
 date: 2026-01-02 00:00:00 +0900
 categories: [Linear Algebra, Vectors]
 tags: [linear algebra, mathematics, vectors]

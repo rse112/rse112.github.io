@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/5_2_LinearDependence.gif
-title: "5.2 선형 독립과 기저"
+title: "5.2 일차독립과 기저(Basis) - 선형독립 판별법"
 date: 2026-01-16 00:00:00 +0900
 categories: [선형대수, 벡터공간]
 tags: [선형대수, 수학, 벡터공간]

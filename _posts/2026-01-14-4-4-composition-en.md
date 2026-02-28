@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/4_4_TransformComposition.gif
-title: "4.4 Composition of Transformations"
+title: "Composition of Linear Transformations and Matrix Multiplication"
 date: 2026-01-14 00:00:00 +0900
 categories: [Linear Algebra, Linear Transformations]
 tags: [linear algebra, mathematics, linear transformations]

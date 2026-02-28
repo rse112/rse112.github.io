@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/6_1_EigenvectorVisualization.gif
-title: "6.1 What Are Eigenvalues and Eigenvectors?"
+title: "Eigenvalues and Eigenvectors - Definition and How to Find Them"
 date: 2026-01-19 00:00:00 +0900
 categories: [Linear Algebra, Eigenvalues and Eigenvectors]
 tags: [linear algebra, mathematics, eigenvalues and eigenvectors]

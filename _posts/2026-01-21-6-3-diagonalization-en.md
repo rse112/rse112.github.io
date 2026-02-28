@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/6_3_DiagonalizationExample.gif
-title: "6.3 Diagonalization"
+title: "Matrix Diagonalization - How to Diagonalize a Matrix"
 date: 2026-01-21 00:00:00 +0900
 categories: [Linear Algebra, Eigenvalues and Eigenvectors]
 tags: [linear algebra, mathematics, eigenvalues and eigenvectors]

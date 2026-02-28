@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/1_4_VectorMagnitude.gif
-title: "1.4 벡터의 크기와 단위벡터"
+title: "1.4 벡터 크기 구하기와 단위벡터"
 date: 2026-01-04 00:00:00 +0900
 categories: [선형대수, 벡터]
 tags: [선형대수, 수학, 벡터]

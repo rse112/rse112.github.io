@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/5_3_DimensionExamples.gif
-title: "5.3 Dimension"
+title: "Dimension of a Vector Space - Basis and Dimension Explained"
 date: 2026-01-17 00:00:00 +0900
 categories: [Linear Algebra, Vector Spaces]
 tags: [linear algebra, mathematics, vector spaces]

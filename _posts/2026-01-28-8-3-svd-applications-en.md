@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/8_3_SVDApplications.gif
-title: "8.3 Applications of SVD"
+title: "SVD Applications - Image Compression, Recommender Systems, and PCA"
 date: 2026-01-28 00:00:00 +0900
 categories: [Linear Algebra, SVD]
 tags: [linear algebra, mathematics, SVD]

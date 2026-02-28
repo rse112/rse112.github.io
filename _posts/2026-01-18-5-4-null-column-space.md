@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/5_4_ColumnSpaceViz.gif
-title: "5.4 영공간과 열공간"
+title: "5.4 영공간(Null Space)과 열공간(Column Space) 구하기"
 date: 2026-01-18 00:00:00 +0900
 categories: [선형대수, 벡터공간]
 tags: [선형대수, 수학, 벡터공간]

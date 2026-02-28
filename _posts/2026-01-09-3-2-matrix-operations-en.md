@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/3_2_MatrixMultiplication.gif
-title: "3.2 Matrix Operations"
+title: "Matrix Operations - Matrix Addition and Multiplication Explained"
 date: 2026-01-09 00:00:00 +0900
 categories: [Linear Algebra, Matrices]
 tags: [linear algebra, mathematics, matrices]

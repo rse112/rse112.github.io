@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/8_2_SVDGeometric.gif
-title: "8.2 The Geometric Meaning of SVD"
+title: "SVD Geometric Interpretation - Visualizing Singular Value Decomposition"
 date: 2026-01-27 00:00:00 +0900
 categories: [Linear Algebra, SVD]
 tags: [linear algebra, mathematics, SVD]

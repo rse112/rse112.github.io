@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/5_1_Span2D.gif
-title: "5.1 부분공간과 생성 (Subspace & Span)"
+title: "5.1 부분공간과 생성(Span) - 벡터공간의 기초"
 date: 2026-01-15 00:00:00 +0900
 categories: [선형대수, 벡터공간]
 tags: [선형대수, 수학, 벡터공간]

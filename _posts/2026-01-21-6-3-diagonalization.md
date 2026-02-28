@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/6_3_DiagonalizationExample.gif
-title: "6.3 대각화 (Diagonalization)"
+title: "6.3 행렬 대각화(Diagonalization) - 대각화 조건과 방법"
 date: 2026-01-21 00:00:00 +0900
 categories: [선형대수, 고유값과 고유벡터]
 tags: [선형대수, 수학, 고유값과 고유벡터]

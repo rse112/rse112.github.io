@@ -1,6 +1,6 @@
 ---
 image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/4_4_TransformComposition.gif
-title: "4.4 변환의 합성"
+title: "4.4 합성변환 - 선형변환의 합성과 행렬 곱"
 date: 2026-01-14 00:00:00 +0900
 categories: [선형대수, 선형변환]
 tags: [선형대수, 수학, 선형변환]
