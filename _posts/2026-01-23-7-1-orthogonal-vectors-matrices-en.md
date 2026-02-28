@@ -1,4 +1,5 @@
 ---
+image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/7_1_OrthogonalVectors.gif
 title: "7.1 Orthogonal Vectors and Orthogonal Matrices"
 date: 2026-01-23 00:00:00 +0900
 categories: [Linear Algebra, Orthogonality]

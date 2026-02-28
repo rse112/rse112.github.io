@@ -1,4 +1,5 @@
 ---
+image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/2_3_CrossProductArea.gif
 title: "2.3 외적 (Cross Product)"
 date: 2026-01-07 00:00:00 +0900
 categories: [선형대수, 내적과 외적]

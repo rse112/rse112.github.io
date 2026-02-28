@@ -1,4 +1,5 @@
 ---
+image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/8_1_SVDFormula.gif
 title: "8.1 Singular Value Decomposition (SVD): Definition"
 date: 2026-01-26 00:00:00 +0900
 categories: [Linear Algebra, SVD]

@@ -1,4 +1,5 @@
 ---
+image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/7_2_GramSchmidtProcess.gif
 title: "7.2 The Gram-Schmidt Process"
 date: 2026-01-24 00:00:00 +0900
 categories: [Linear Algebra, Orthogonality]

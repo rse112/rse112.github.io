@@ -1,4 +1,5 @@
 ---
+image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/2_1_DotProductGeometric.gif
 title: "2.1 The Dot Product"
 date: 2026-01-05 00:00:00 +0900
 categories: [Linear Algebra, Dot and Cross Product]

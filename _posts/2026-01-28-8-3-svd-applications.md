@@ -1,4 +1,5 @@
 ---
+image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/8_3_SVDApplications.gif
 title: "8.3 SVD의 응용"
 date: 2026-01-28 00:00:00 +0900
 categories: [선형대수, 특이값 분해]

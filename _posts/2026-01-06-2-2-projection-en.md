@@ -1,4 +1,5 @@
 ---
+image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/2_2_VectorProjection.gif
 title: "2.2 Vector Projection"
 date: 2026-01-06 00:00:00 +0900
 categories: [Linear Algebra, Dot and Cross Product]

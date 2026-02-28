@@ -1,4 +1,5 @@
 ---
+image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/5_1_Span2D.gif
 title: "5.1 Subspaces and Span"
 date: 2026-01-15 00:00:00 +0900
 categories: [Linear Algebra, Vector Spaces]

@@ -1,4 +1,5 @@
 ---
+image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/1_3_ScalarMultiplication.gif
 title: "1.3 Scalar Multiplication"
 date: 2026-01-03 00:00:00 +0900
 categories: [Linear Algebra, Vectors]

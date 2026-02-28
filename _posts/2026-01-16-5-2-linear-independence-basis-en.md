@@ -1,4 +1,5 @@
 ---
+image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/5_2_LinearDependence.gif
 title: "5.2 Linear Independence and Basis"
 date: 2026-01-16 00:00:00 +0900
 categories: [Linear Algebra, Vector Spaces]

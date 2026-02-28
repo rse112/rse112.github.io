@@ -1,4 +1,5 @@
 ---
+image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/6_4_EigendecompGeometric.gif
 title: "6.4 The Geometric Meaning of Eigenvalues"
 date: 2026-01-22 00:00:00 +0900
 categories: [Linear Algebra, Eigenvalues and Eigenvectors]

@@ -1,4 +1,5 @@
 ---
+image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/3_1_MatrixIntro.gif
 title: "3.1 What is a Matrix?"
 date: 2026-01-08 00:00:00 +0900
 categories: [Linear Algebra, Matrices]

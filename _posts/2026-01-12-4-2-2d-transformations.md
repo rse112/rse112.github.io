@@ -1,4 +1,5 @@
 ---
+image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/4_2_Rotation2D.gif
 title: "4.2 2D 선형변환"
 date: 2026-01-12 00:00:00 +0900
 categories: [선형대수, 선형변환]

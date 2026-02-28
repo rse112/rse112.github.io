@@ -1,4 +1,5 @@
 ---
+image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/1_1_ScalarVsVector.gif
 title: "1.1 What Is a Vector?"
 date: 2026-01-01 00:00:00 +0900
 categories: [Linear Algebra, Vectors]

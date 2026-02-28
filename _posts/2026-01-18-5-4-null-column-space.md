@@ -1,4 +1,5 @@
 ---
+image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/5_4_ColumnSpaceViz.gif
 title: "5.4 영공간과 열공간"
 date: 2026-01-18 00:00:00 +0900
 categories: [선형대수, 벡터공간]

@@ -1,4 +1,5 @@
 ---
+image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/6_2_CharacteristicEquation.gif
 title: "6.2 The Characteristic Equation"
 date: 2026-01-20 00:00:00 +0900
 categories: [Linear Algebra, Eigenvalues and Eigenvectors]

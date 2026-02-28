@@ -1,4 +1,5 @@
 ---
+image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/8_2_SVDGeometric.gif
 title: "8.2 SVD의 기하학적 의미"
 date: 2026-01-27 00:00:00 +0900
 categories: [선형대수, 특이값 분해]

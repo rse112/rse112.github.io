@@ -1,4 +1,5 @@
 ---
+image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/3_2_MatrixMultiplication.gif
 title: "3.2 행렬 연산"
 date: 2026-01-09 00:00:00 +0900
 categories: [선형대수, 행렬]

@@ -1,4 +1,5 @@
 ---
+image: https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/7_2_GramSchmidtProcess.gif
 title: "7.2 그람-슈미트 과정"
 date: 2026-01-24 00:00:00 +0900
 categories: [선형대수, 직교성]
