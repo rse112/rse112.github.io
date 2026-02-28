@@ -25,6 +25,8 @@ $$\vec{u} \cdot \vec{v} = \vec{u}^T\vec{v} = \sum_{i=1}^{n} u_i v_i = 0$$
 
 이는 두 벡터가 기하학적으로 90도 각도를 이룬다는 것과 동치다(단, 둘 다 비영벡터인 경우).
 
+![직교 벡터 시각화 — 내적이 0인 두 벡터](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/7_1_OrthogonalVectors.gif)
+
 ### 예시
 
 $$\vec{u} = \begin{pmatrix}1\\2\\3\end{pmatrix}, \quad \vec{v} = \begin{pmatrix}1\\1\\-1\end{pmatrix}$$
@@ -81,6 +83,8 @@ $$Q^T Q = Q Q^T = I$$
 $$Q^{-1} = Q^T$$
 
 직교 행렬의 열벡터들은 정규직교 집합을 이루고, 행벡터들도 마찬가지로 정규직교 집합을 이룬다.
+
+![직교 행렬 — 길이와 각도를 보존하는 변환](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/7_1_OrthogonalMatrix.gif)
 
 ### 직교 행렬의 핵심 성질
 

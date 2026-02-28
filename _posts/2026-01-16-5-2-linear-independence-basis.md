@@ -53,6 +53,8 @@ $$\vec{v}_1 = -\frac{c_2}{c_1}\vec{v}_2 - \cdots - \frac{c_k}{c_1}\vec{v}_k$$
 
 $\vec{v}_1$이 나머지 벡터들로 표현되므로 "새로운 방향"을 제공하지 못한다.
 
+![선형 종속 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/5_2_LinearDependence.gif)
+
 ---
 
 ## 예시로 확인하기
@@ -93,6 +95,8 @@ $$\hat{e}_1 = \begin{pmatrix}1\\0\\\vdots\\0\end{pmatrix},\quad \hat{e}_2 = \beg
 $$\vec{x} = x_1\hat{e}_1 + x_2\hat{e}_2 + \cdots + x_n\hat{e}_n$$
 
 으로 **유일하게** 표현된다.
+
+![표준 기저 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/5_2_StandardBasis.gif)
 
 ---
 

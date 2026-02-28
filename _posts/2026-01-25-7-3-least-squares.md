@@ -27,6 +27,8 @@ $\|A\vec{x} - \vec{b}\|^2$은 각 방정식에서의 오차의 제곱합이다:
 
 $$\|A\vec{x} - \vec{b}\|^2 = \sum_{i=1}^{m} ([\text{i번째 행}] \cdot \vec{x} - b_i)^2$$
 
+![최소제곱법 기하학적 의미 — 열공간으로의 정사영](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/7_3_LeastSquaresViz.gif)
+
 ---
 
 ## 정규방정식 (Normal Equations)
@@ -54,6 +56,8 @@ $A^TA$가 가역이면 (즉, $A$의 열들이 선형독립이면):
 $$\hat{x} = (A^TA)^{-1}A^T\vec{b}$$
 
 행렬 $(A^TA)^{-1}A^T$를 **의사역행렬(pseudoinverse)**의 특수한 경우라고도 하며, $A^+$로 표기하기도 한다.
+
+![정규방정식 A^T A x = A^T b 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/7_3_LeastSquaresFormula.gif)
 
 ---
 

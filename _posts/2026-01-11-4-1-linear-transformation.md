@@ -40,6 +40,8 @@ $$T(c_1\vec{u} + c_2\vec{v}) = c_1\,T(\vec{u}) + c_2\,T(\vec{v})$$
 
 이를 **선형성(linearity)**이라 부른다.
 
+![선형변환 격자 변형 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/4_1_LinearTransformGrid.gif)
+
 ### 선형변환이 아닌 예시
 
 함수 $f(x) = x + 3$은 선형변환이 아니다.
@@ -81,6 +83,8 @@ $$A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$$
 임의의 벡터 $\vec{x} = \begin{pmatrix} x_1 \\ x_2 \end{pmatrix}$에 대해
 
 $$T(\vec{x}) = x_1\,T(\hat{e}_1) + x_2\,T(\hat{e}_2) = x_1 \begin{pmatrix} a \\ c \end{pmatrix} + x_2 \begin{pmatrix} b \\ d \end{pmatrix} = A\vec{x}$$
+
+![기저벡터 변환 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/4_1_LinearTransformBasis.gif)
 
 ---
 

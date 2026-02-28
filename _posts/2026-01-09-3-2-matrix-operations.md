@@ -28,6 +28,8 @@ $$(A - B)_{ij} = a_{ij} - b_{ij}$$
 
 $$\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} + \begin{pmatrix} 5 & 6 \\ 7 & 8 \end{pmatrix} = \begin{pmatrix} 6 & 8 \\ 10 & 12 \end{pmatrix}$$
 
+![행렬 덧셈 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/3_2_MatrixAddition.gif)
+
 ### 성질
 
 $$A + B = B + A \quad \text{(교환법칙)}$$
@@ -77,6 +79,8 @@ $$(AB)_{ij} = \sum_{k=1}^{n} a_{ik} b_{kj} = a_{i1}b_{1j} + a_{i2}b_{2j} + \cdot
 $$A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}, \quad B = \begin{pmatrix} 5 & 6 \\ 7 & 8 \end{pmatrix}$$
 
 $$AB = \begin{pmatrix} 1\cdot5+2\cdot7 & 1\cdot6+2\cdot8 \\ 3\cdot5+4\cdot7 & 3\cdot6+4\cdot8 \end{pmatrix} = \begin{pmatrix} 19 & 22 \\ 43 & 50 \end{pmatrix}$$
+
+![행렬 곱셈 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/3_2_MatrixMultiplication.gif)
 
 ---
 

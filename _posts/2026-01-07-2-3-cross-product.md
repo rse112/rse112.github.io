@@ -31,6 +31,8 @@ $$\vec{u} \times \vec{v} = \hat{i}(u_2 v_3 - u_3 v_2) - \hat{j}(u_1 v_3 - u_3 v_
 
 $$\vec{u} \times \vec{v} = (u_2 v_3 - u_3 v_2,\ u_3 v_1 - u_1 v_3,\ u_1 v_2 - u_2 v_1)$$
 
+![외적 공식 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/2_3_CrossProductFormula.gif)
+
 ### 예시
 
 $\vec{u} = (1, 2, 3)$, $\vec{v} = (4, 5, 6)$일 때:
@@ -59,6 +61,8 @@ $$\text{평행사변형의 넓이} = \|\vec{u} \times \vec{v}\|$$
 $$\text{삼각형의 넓이} = \frac{1}{2}\|\vec{u} \times \vec{v}\|$$
 
 두 벡터가 평행하면 $\sin\theta = 0$이 되어 외적이 영벡터가 된다. 반대로 두 벡터가 직교하면 $\sin 90° = 1$로 외적의 크기가 최대가 된다.
+
+![외적과 평행사변형 넓이 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/2_3_CrossProductArea.gif)
 
 ---
 

@@ -29,6 +29,8 @@ $$c\vec{v} = (cv_1,\ cv_2,\ cv_3)$$
 
 $$3\vec{v} = (3 \cdot 2,\ 3 \cdot (-1)) = (6, -3)$$
 
+![스칼라 곱 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/1_3_ScalarMultiplication.gif)
+
 ---
 
 ## 기하학적 의미
@@ -52,6 +54,8 @@ $$c = \frac{1}{2},\quad \vec{v} = (4, 2) \Rightarrow \frac{1}{2}\vec{v} = (2, 1)
 $$c = -1,\quad \vec{v} = (3, 1) \Rightarrow -\vec{v} = (-3, -1)$$
 
 크기는 $|c|$ 배가 되고, 방향이 **정반대**로 바뀐다. 특히 $c = -1$ 이면 역벡터가 된다.
+
+![음수 스칼라 곱 방향 반전 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/1_3_NegativeScalar.gif)
 
 ### $c = 0$ : 영벡터
 

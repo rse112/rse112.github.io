@@ -50,6 +50,8 @@ $$R_z(\theta) = \begin{pmatrix} \cos\theta & -\sin\theta & 0 \\ \sin\theta & \co
 xy 블록이 2D 회전 행렬과 동일하다. z 좌표는 변하지 않는다.
 항공 용어로는 **요(Yaw)** — 비행기가 좌우로 방향을 바꾸는 동작이다.
 
+![3D 회전 행렬 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/4_3_RotationMatrices3D.gif)
+
 ---
 
 ## 3D 크기 조정 (Scaling)
@@ -59,6 +61,8 @@ xy 블록이 2D 회전 행렬과 동일하다. z 좌표는 변하지 않는다.
 $$S = \begin{pmatrix} s_x & 0 & 0 \\ 0 & s_y & 0 \\ 0 & 0 & s_z \end{pmatrix} = \text{diag}(s_x,\, s_y,\, s_z)$$
 
 부피 변화율은 $|\det(S)| = |s_x \cdot s_y \cdot s_z|$이다.
+
+![3D 크기 조정 행렬 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/4_3_ScalingMatrix3D.gif)
 
 ---
 

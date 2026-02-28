@@ -22,7 +22,7 @@ description: >- # used by seo meta and the atom feed
   화이팅!
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://rse112.github.io/"
+url: "https://rse112.github.io"
 
 github:
   username: rse112 # change to your GitHub username
@@ -36,7 +36,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: 조찬규
-  email: chohy121212@naver.com # change to your email address
+  email: # change to your email address
   links:
     # The first element serves as the copyright owner's link # change to your Twitter homepage
     - https://github.com/rse112 # change to your GitHub homepage
@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "https://cdn.discordapp.com/attachments/1124876246522790048/1295730300071972967/image.png?ex=671999a1&is=67184821&hm=1ecb53d81b5ebbf62ba9553bac03e4d5358cd2b952e9aa573004dbfc4f62edb4&"
+avatar: "/assets/img/avatar.png"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

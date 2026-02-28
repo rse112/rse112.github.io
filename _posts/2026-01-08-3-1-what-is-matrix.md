@@ -25,6 +25,8 @@ $$A = \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cd
 
 성분 $a_{ij}$는 $i$번째 행, $j$번째 열에 위치한 원소를 의미한다. 행 번호가 먼저, 열 번호가 나중에 온다는 규칙을 기억하자.
 
+![행렬 크기(차원) 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/3_1_MatrixDimension.gif)
+
 ### 연립방정식과의 관계
 
 다음 연립방정식을 생각해 보자.
@@ -38,6 +40,8 @@ $$A = \begin{pmatrix} 2 & 3 \\ 1 & -1 \end{pmatrix}, \quad \vec{x} = \begin{pmat
 그러면 연립방정식은 단 하나의 행렬 방정식으로 표현된다.
 
 $$A\vec{x} = \vec{b}$$
+
+![행렬 도입 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/3_1_MatrixIntro.gif)
 
 ---
 

@@ -84,6 +84,8 @@ $$\text{span}\{\vec{v}\} = \{c\vec{v} \mid c \in \mathbb{R}\}$$
 예를 들어 $\vec{v} = \begin{pmatrix}2\\1\end{pmatrix}$이면
 $\text{span}\{\vec{v}\}$는 기울기 $\tfrac{1}{2}$인 원점을 지나는 직선이다.
 
+![1D Span 직선 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/5_1_Span1D.gif)
+
 ---
 
 ## 2D Span — 평면
@@ -96,6 +98,8 @@ $$\text{span}\{\vec{v}_1, \vec{v}_2\}$$
 
 $\mathbb{R}^3$에서 두 벡터 $\vec{v}_1 = (1, 0, 0)^\top$, $\vec{v}_2 = (0, 1, 0)^\top$이라면
 $\text{span}\{\vec{v}_1, \vec{v}_2\}$는 xy 평면 전체다.
+
+![2D Span 평면 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/5_1_Span2D.gif)
 
 ---
 

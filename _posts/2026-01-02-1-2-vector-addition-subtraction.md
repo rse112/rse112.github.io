@@ -31,6 +31,8 @@ $$\vec{u} + \vec{v} = (u_1 + v_1,\ u_2 + v_2,\ u_3 + v_3)$$
 
 $$\vec{u} + \vec{v} = (3+1,\ 1+4) = (4, 5)$$
 
+![벡터 덧셈 Tip-to-Tail 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/1_2_VectorAddition.gif)
+
 ### 기하학적 해석: Tip-to-Tail 법칙
 
 벡터 덧셈을 기하학적으로 보는 첫 번째 방법은 **Tip-to-Tail(끝에서 꼬리) 법칙**이다.
@@ -48,6 +50,8 @@ $$\vec{u} + \vec{v} = (3+1,\ 1+4) = (4, 5)$$
 1. 같은 시작점에서 $\vec{u}$ 와 $\vec{v}$ 를 각각 그린다.
 2. 두 벡터를 두 변으로 하는 **평행사변형**을 그린다.
 3. 평행사변형의 **대각선**이 $\vec{u} + \vec{v}$ 이다.
+
+![평행사변형 법칙 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/1_2_ParallelogramRule.gif)
 
 두 방법은 항상 같은 결과를 준다.
 
@@ -108,6 +112,8 @@ $$\vec{u} - \vec{v} = (5-2,\ 3-1) = (3, 2)$$
 다시 말해, $\vec{u} - \vec{v}$ 는 "$\vec{v}$ 의 위치에서 $\vec{u}$ 의 위치까지의 상대적인 변위"를 나타낸다. 두 점의 위치벡터가 각각 $\vec{u}$, $\vec{v}$ 일 때, 두 점 사이의 벡터를 구하는 데 뺄셈이 사용된다.
 
 **Tip-to-Tail로 검증:** $-\vec{v}$ 를 먼저 그린 뒤 $\vec{u}$ 를 붙이면 같은 결과를 얻는다.
+
+![벡터 뺄셈 기하학적 의미 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/1_2_VectorSubtraction.gif)
 
 ---
 

@@ -29,6 +29,8 @@ math: true
 | $\lambda = 0$ | 해당 방향이 영벡터로 붕괴 |
 | $\lambda < 0$ | 방향 반전 후 $|\lambda|$배 변화 |
 
+![고유값 기하학적 의미 — 단위원이 타원으로 변환](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/6_4_EigendecompGeometric.gif)
+
 ### 직관적 그림
 
 2차원 공간에서 두 개의 고유벡터 $\vec{v}_1$, $\vec{v}_2$ (서로 다른 방향)가 있다고 하자. 행렬 $A$를 적용하면:

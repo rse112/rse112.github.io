@@ -38,6 +38,8 @@ $$N(A) = \{\vec{x} \in \mathbb{R}^n \mid A\vec{x} = \vec{0}\}$$
 
 $$\text{nullity}(A) = \dim(N(A))$$
 
+![영공간 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/5_4_NullSpaceViz.gif)
+
 ---
 
 ## 영공간 예시
@@ -75,6 +77,8 @@ $$C(A) = \{A\vec{x} \mid \vec{x} \in \mathbb{R}^n\} = \text{(A의 치역, Range 
 열공간의 차원을 **랭크(Rank)**라 부른다:
 
 $$\text{rank}(A) = \dim(C(A))$$
+
+![열공간 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/5_4_ColumnSpaceViz.gif)
 
 ---
 

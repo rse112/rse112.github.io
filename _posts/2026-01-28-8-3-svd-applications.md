@@ -25,6 +25,8 @@ $$A = U\Sigma V^T = \sum_{i=1}^{r} \sigma_i \vec{u}_i \vec{v}_i^T$$
 
 각 항 $\sigma_i \vec{u}_i \vec{v}_i^T$는 **랭크-1 행렬**이다. 첫 번째 항이 $A$에서 가장 "중요한" 정보를, 이후 항들이 점차 덜 중요한 세부 정보를 담는다.
 
+![저랭크 근사 — 특이값 개수에 따른 행렬 근사](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/8_3_LowRankApproximation.gif)
+
 ### Rank-$k$ 근사
 
 처음 $k$개의 항만 유지한 **Rank-$k$ 근사**:
@@ -67,6 +69,8 @@ $k \ll \min(m,n)$이면 압축률이 크게 떨어진다.
 - 압축률 $\approx 10$배
 
 큰 특이값들이 전체 정보의 대부분을 담고 있기 때문에, $k$를 적절히 선택하면 시각적으로 거의 손실 없이 압축할 수 있다.
+
+![SVD 응용 — PCA, 이미지 압축, 의사역행렬 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/8_3_SVDApplications.gif)
 
 ---
 

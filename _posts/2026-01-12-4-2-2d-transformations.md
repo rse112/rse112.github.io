@@ -38,6 +38,8 @@ $$R_{90°} = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$$
 - $\det(R_\theta) = \cos^2\theta + \sin^2\theta = 1$ (넓이 보존)
 - $R_\theta^{-1} = R_{-\theta} = R_\theta^\top$ (역변환은 반대 방향 회전)
 
+![2D 회전 변환 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/4_2_Rotation2D.gif)
+
 ---
 
 ## 반사 변환 (Reflection)
@@ -56,6 +58,8 @@ $$M_{y=x} = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$$
 
 반사 행렬의 특징: $\det(M) = -1$ (넓이는 보존하지만 방향이 뒤집힌다).
 
+![2D 반사 변환 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/4_2_Reflection2D.gif)
+
 ---
 
 ## 전단 변환 (Shear)
@@ -72,6 +76,8 @@ $$S_H = \begin{pmatrix} 1 & k \\ 0 & 1 \end{pmatrix}$$
 $$S_V = \begin{pmatrix} 1 & 0 \\ k & 1 \end{pmatrix}$$
 
 전단 변환의 특징: $\det(S) = 1$ (넓이는 변하지 않는다).
+
+![2D 전단 변환 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/4_2_Shear2D.gif)
 
 ---
 

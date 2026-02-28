@@ -62,6 +62,8 @@ $$A^{-1} = \frac{1}{1}\begin{pmatrix} 2 & -1 \\ -5 & 3 \end{pmatrix} = \begin{pm
 
 검증: $AA^{-1} = \begin{pmatrix}3&1\\5&2\end{pmatrix}\begin{pmatrix}2&-1\\-5&3\end{pmatrix} = \begin{pmatrix}1&0\\0&1\end{pmatrix} = I$ $\checkmark$
 
+![2×2 역행렬 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/3_3_InverseMatrix2x2.gif)
+
 ---
 
 ## 행렬식 (Determinant)
@@ -80,6 +82,8 @@ $$\det A = \det\begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$$
 - $|\det A| = 1$: 넓이가 보존된다 (등적 변환).
 - $|\det A| = 0$: 넓이가 0이 된다 — 평면이 선으로 찌부러진다.
 - $\det A < 0$: 방향(오리엔테이션)이 뒤집힌다.
+
+![2×2 행렬식 기하학적 의미 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/3_3_Determinant2x2.gif)
 
 ### 3×3 행렬식
 

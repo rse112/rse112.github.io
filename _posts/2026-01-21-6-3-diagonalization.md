@@ -28,6 +28,8 @@ $$A = PDP^{-1}$$
 - $P$: 대응하는 고유벡터들을 열로 갖는 가역행렬
 - $P^{-1}$: $P$의 역행렬
 
+![대각화 공식 A = PDP역행렬 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/6_3_DiagonalizationFormula.gif)
+
 $$D = \begin{pmatrix} \lambda_1 & 0 & \cdots & 0 \\ 0 & \lambda_2 & \cdots & 0 \\ \vdots & & \ddots & \vdots \\ 0 & 0 & \cdots & \lambda_n \end{pmatrix}, \qquad P = \begin{pmatrix} | & | & & | \\ \vec{v}_1 & \vec{v}_2 & \cdots & \vec{v}_n \\ | & | & & | \end{pmatrix}$$
 
 ---
@@ -81,6 +83,8 @@ $$P^{-1} = \frac{1}{-3}\begin{pmatrix} -2 & -1 \\ -1 & 1 \end{pmatrix} = \begin{
 $$PDP^{-1} = \begin{pmatrix}1&1\\1&-2\end{pmatrix}\begin{pmatrix}5&0\\0&2\end{pmatrix}\begin{pmatrix}2/3&1/3\\1/3&-1/3\end{pmatrix}$$
 
 $$= \begin{pmatrix}5&2\\5&-4\end{pmatrix}\begin{pmatrix}2/3&1/3\\1/3&-1/3\end{pmatrix} = \begin{pmatrix}4&1\\2&3\end{pmatrix} = A \checkmark$$
+
+![대각화 계산 예시 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/6_3_DiagonalizationExample.gif)
 
 ---
 

@@ -30,6 +30,8 @@ $$T_2 \circ T_1 : \mathbb{R}^n \to \mathbb{R}^k, \quad (T_2 \circ T_1)(\vec{x}) 
 
 $T_1$을 **먼저** 적용하고, $T_2$를 **나중에** 적용한다.
 
+![변환 합성 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/4_4_TransformComposition.gif)
+
 ---
 
 ## 행렬로 표현하기
@@ -59,6 +61,8 @@ $$MR = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \begin{pmatrix} \tfrac{\sqr
 $$RM = \begin{pmatrix} \tfrac{\sqrt{2}}{2} & -\tfrac{\sqrt{2}}{2} \\ \tfrac{\sqrt{2}}{2} & \tfrac{\sqrt{2}}{2} \end{pmatrix} \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} = \begin{pmatrix} \tfrac{\sqrt{2}}{2} & \tfrac{\sqrt{2}}{2} \\ \tfrac{\sqrt{2}}{2} & -\tfrac{\sqrt{2}}{2} \end{pmatrix}$$
 
 $MR \neq RM$ — 순서가 다르면 결과가 다르다.
+
+![변환 합성 순서의 차이 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/4_4_CompositionOrder.gif)
 
 ---
 

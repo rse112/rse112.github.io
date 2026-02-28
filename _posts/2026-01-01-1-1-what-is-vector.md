@@ -35,6 +35,8 @@ math: true
 - 힘: $10\text{N}$, **위** 방향
 - 변위: $3\text{m}$, **북동** 방향
 
+![스칼라와 벡터 비교 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/1_1_ScalarVsVector.gif)
+
 ### 표기법
 
 벡터는 보통 다음과 같이 표기한다:
@@ -56,6 +58,8 @@ math: true
 예를 들어, 점 $A(1, 1)$에서 점 $B(4, 3)$으로 향하는 벡터 $\vec{AB}$는:
 
 $$\vec{AB} = B - A = (4-1,\ 3-1) = (3, 2)$$
+
+![좌표계에서의 벡터 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/1_1_VectorInCoordinate.gif)
 
 ### 위치벡터(Position Vector)
 

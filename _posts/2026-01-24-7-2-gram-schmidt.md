@@ -55,6 +55,8 @@ $$\vec{u}_k = \vec{a}_k - \sum_{j=1}^{k-1} (\vec{a}_k \cdot \vec{e}_j)\vec{e}_j$
 
 $$\vec{e}_k = \frac{\vec{u}_k}{\|\vec{u}_k\|}$$
 
+![그람-슈미트 과정 단계별 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/7_2_GramSchmidtProcess.gif)
+
 ---
 
 ## 구체적 예시

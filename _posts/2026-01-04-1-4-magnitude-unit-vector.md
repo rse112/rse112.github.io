@@ -40,6 +40,8 @@ $$\|\vec{v}\| = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5$$
 
 크기는 **항상 0 이상**이며, $\|\vec{v}\| = 0$ 이면 $\vec{v} = \vec{0}$ (영벡터) 이다.
 
+![벡터 크기(norm) 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/1_4_VectorMagnitude.gif)
+
 ### 3차원 크기
 
 3차원 벡터 $\vec{v} = (v_1, v_2, v_3)$ 의 크기는 피타고라스 정리를 두 번 적용하여 구한다:
@@ -77,6 +79,8 @@ $$\hat{v} = \frac{(3, 4)}{5} = \left(\frac{3}{5},\ \frac{4}{5}\right) = (0.6,\ 0
 검증: $\|\hat{v}\| = \sqrt{0.6^2 + 0.8^2} = \sqrt{0.36 + 0.64} = \sqrt{1} = 1$ $\checkmark$
 
 **주의:** 영벡터 $\vec{0}$ 는 크기가 0이므로 단위벡터가 존재하지 않는다 (0으로 나누기는 정의되지 않음).
+
+![단위벡터(정규화) 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/1_4_UnitVector.gif)
 
 ---
 

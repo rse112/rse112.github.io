@@ -53,6 +53,8 @@ $$\Sigma V^T\vec{x} \xrightarrow{U} U\Sigma V^T\vec{x} = A\vec{x}$$
 
 이 단계도 길이와 각도를 보존한다. 오직 $\Sigma$ 단계만이 도형의 크기를 변화시킨다.
 
+![SVD 기하학적 의미 — 단위원이 타원으로 변환되는 과정](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/8_2_SVDGeometric.gif)
+
 ---
 
 ## 단위원이 타원으로 변하는 과정

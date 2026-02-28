@@ -35,6 +35,8 @@ $$\det(A - \lambda I) = 0$$
 
 이것이 **특성방정식(characteristic equation)**이다.
 
+![특성방정식 도출 과정 시각화](https://cdn.jsdelivr.net/gh/rse112/math-animations@main/media/gifs/6_2_CharacteristicEquation.gif)
+
 ### 특성다항식
 
 $\det(A - \lambda I)$를 $\lambda$에 대한 다항식으로 전개한 것을 **특성다항식(characteristic polynomial)**이라 한다. $n \times n$ 행렬에 대해 특성다항식의 차수는 $n$이며, 따라서 (복소수 범위에서) 정확히 $n$개의 고유값이 존재한다(중복 포함).
