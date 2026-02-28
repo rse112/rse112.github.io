@@ -4,6 +4,7 @@ date: 2026-01-03 00:00:00 +0900
 categories: [선형대수, 벡터]
 tags: [선형대수, 수학, 벡터]
 math: true
+hreflang_en: /posts/1-3-scalar-multiplication-en/
 ---
 
 

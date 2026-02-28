@@ -4,6 +4,7 @@ date: 2026-01-16 00:00:00 +0900
 categories: [선형대수, 벡터공간]
 tags: [선형대수, 수학, 벡터공간]
 math: true
+hreflang_en: /posts/5-2-linear-independence-basis-en/
 ---
 
 

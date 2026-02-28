@@ -103,5 +103,13 @@
     {% include mode-toggle.html %}
   {% endunless %}
 
+  {% if page.hreflang_en %}
+    <link rel="alternate" hreflang="en" href="{{ page.hreflang_en | absolute_url }}" />
+    <link rel="alternate" hreflang="ko" href="{{ page.url | absolute_url }}" />
+  {% elsif page.hreflang_ko %}
+    <link rel="alternate" hreflang="ko" href="{{ page.hreflang_ko | absolute_url }}" />
+    <link rel="alternate" hreflang="en" href="{{ page.url | absolute_url }}" />
+  {% endif %}
+
   {% include metadata-hook.html %}
 </head>

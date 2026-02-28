@@ -4,6 +4,7 @@ date: 2026-01-24 00:00:00 +0900
 categories: [선형대수, 직교성]
 tags: [선형대수, 수학, 직교성]
 math: true
+hreflang_en: /posts/7-2-gram-schmidt-en/
 ---
 
 

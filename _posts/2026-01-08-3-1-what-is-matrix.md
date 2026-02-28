@@ -4,6 +4,7 @@ date: 2026-01-08 00:00:00 +0900
 categories: [선형대수, 행렬]
 tags: [선형대수, 수학, 행렬]
 math: true
+hreflang_en: /posts/3-1-what-is-matrix-en/
 ---
 
 

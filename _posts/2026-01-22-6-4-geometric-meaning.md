@@ -4,6 +4,7 @@ date: 2026-01-22 00:00:00 +0900
 categories: [선형대수, 고유값과 고유벡터]
 tags: [선형대수, 수학, 고유값과 고유벡터]
 math: true
+hreflang_en: /posts/6-4-geometric-meaning-en/
 ---
 
 
